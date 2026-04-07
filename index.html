@@ -76,11 +76,12 @@
     .hero h1 em{font-style:normal;color:var(--rojo);display:block}
     .hero p{font-size:16px;font-weight:300;line-height:1.7;color:var(--gris-claro);max-width:420px;margin-bottom:44px;animation:fadeUp 0.6s 0.2s ease both}
     .hero-btns{display:flex;gap:16px;flex-wrap:wrap;animation:fadeUp 0.6s 0.3s ease both}
-    .hero-stats{position:absolute;bottom:56px;right:48px;display:flex;gap:48px;z-index:2}
-    .stat{text-align:right}
-    .stat+.stat{padding-left:48px;border-left:1px solid rgba(204,0,0,0.25)}
-    .stat-num{font-family:'Bebas Neue',sans-serif;font-size:42px;color:var(--blanco);line-height:1}
-    .stat-label{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gris-claro);margin-top:4px}
+    /* ── STATS HERO ── */
+    .hero-stats{position:absolute;bottom:0;right:0;display:flex;z-index:2}
+    .stat{text-align:center;padding:24px 40px;background:rgba(5,5,5,0.75);backdrop-filter:blur(12px);border-top:1px solid rgba(204,0,0,0.25);border-left:1px solid rgba(204,0,0,0.15)}
+    .stat-num{font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--blanco);line-height:1;letter-spacing:1px}
+    .stat-sep{width:28px;height:2px;background:var(--rojo);margin:8px auto}
+    .stat-label{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.5)}
     @keyframes statGlow{0%{text-shadow:none}50%{text-shadow:0 0 20px rgba(204,0,0,0.6)}100%{text-shadow:none}}
     .stat-num.done{animation:statGlow 0.8s ease}
 
@@ -280,11 +281,12 @@
       .hero-btns{gap:10px}
       .btn-primary,.btn-secondary{padding:13px 24px;font-size:13px}
       .hero-line{display:none}
-      .hero-stats{position:static;display:flex;flex-direction:row;justify-content:space-between;width:100%;padding:20px;margin-top:32px;background:rgba(0,0,0,0.6);backdrop-filter:blur(8px);border-top:1px solid rgba(204,0,0,0.2);gap:0}
-      .stat{text-align:center;flex:1;padding:0;border:none}
-      .stat+.stat{padding-left:0;border-left:1px solid rgba(204,0,0,0.2)}
-      .stat-num{font-size:30px}
-      .stat-label{font-size:9px;letter-spacing:1px}
+      .hero-stats{position:static;display:flex;flex-direction:row;justify-content:stretch;width:100%;margin-top:0;bottom:auto;right:auto}
+      .stat{flex:1;border-left:none;border-top:1px solid rgba(204,0,0,0.25);padding:18px 12px}
+      .stat+.stat{border-left:1px solid rgba(204,0,0,0.15)}
+      .stat-num{font-size:36px}
+      .stat-sep{margin:6px auto}
+      .stat-label{font-size:10px;letter-spacing:2px}
       section{padding:56px 16px}
       .section-title{font-size:clamp(32px,8vw,48px);margin-bottom:28px}
       .catalogo-controles{flex-direction:column;align-items:stretch}
@@ -365,11 +367,13 @@
   <div class="hero-stats">
     <div class="stat">
       <div class="stat-num" data-target="30" data-suffix="+">0</div>
+      <div class="stat-sep"></div>
       <div class="stat-label">Autos disponibles</div>
     </div>
     <div class="stat">
-      <div class="stat-num" data-target="10" data-suffix=" años">0</div>
-      <div class="stat-label">En el mercado</div>
+      <div class="stat-num" data-target="10" data-suffix="+">0</div>
+      <div class="stat-sep"></div>
+      <div class="stat-label">Años en el mercado</div>
     </div>
   </div>
 </section>
@@ -417,7 +421,7 @@
       <div class="modal-specs-grid" id="modalSpecs"></div>
       <div class="modal-desc" id="modalDesc" style="display:none"></div>
       <div class="modal-btns">
-        <button class="btn-primary" onclick="consultarDesdeModal()">Consultar por este auto</button>
+        <a id="modalWaBtn" href="#" target="_blank" class="btn-primary" style="text-align:center;">Consultar por WhatsApp</a>
         <button class="btn-secondary" onclick="cerrarModalDirecto()">Volver al catálogo</button>
       </div>
     </div>
@@ -541,8 +545,14 @@
 <footer>
   <div class="footer-logo">JB <span>Automotores</span></div>
   <div class="footer-copy">© 2025 JB Automotores. Todos los derechos reservados.</div>
-  <button onclick="abrirAdmin()" style="background:transparent;border:none;color:#2a2a2a;font-size:11px;cursor:pointer;letter-spacing:1px;">administrar</button>
 </footer>
+
+<!-- Botón admin discreto fijo -->
+<div style="position:fixed;bottom:20px;left:20px;z-index:199;">
+  <button id="btnAdmin" onclick="abrirAdmin()" style="background:rgba(10,10,10,0.8);border:1px solid #333;color:#444;font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:6px 12px;cursor:pointer;backdrop-filter:blur(8px);transition:all 0.2s;">
+    Admin
+  </button>
+</div>
 
 <!-- ============================================================
      HTML — WHATSAPP FLOTANTE
@@ -559,8 +569,8 @@
     <div style="background:var(--negro-suave);border:1px solid var(--gris);padding:48px 40px;width:340px;text-align:center;">
       <div style="font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:3px;margin-bottom:4px;">JB <span style="color:var(--rojo)">Automotores</span></div>
       <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gris-claro);margin-bottom:32px;">Panel de administración</div>
-      <input id="aUser" type="text" placeholder="Usuario" autocomplete="off" style="width:100%;background:var(--negro-medio);border:1px solid var(--gris);color:var(--blanco);padding:14px 16px;font-family:'Barlow',sans-serif;font-size:15px;outline:none;margin-bottom:12px;"/>
-      <input id="aPass" type="password" placeholder="Contraseña" style="width:100%;background:var(--negro-medio);border:1px solid var(--gris);color:var(--blanco);padding:14px 16px;font-family:'Barlow',sans-serif;font-size:15px;outline:none;margin-bottom:12px;"/>
+      <input id="aUser" type="text" placeholder="Usuario" autocomplete="off" onkeydown="if(event.key==='Enter')doLogin()" oninput="document.getElementById('aErr').style.display='none'" style="width:100%;background:var(--negro-medio);border:1px solid var(--gris);color:var(--blanco);padding:14px 16px;font-family:'Barlow',sans-serif;font-size:15px;outline:none;margin-bottom:12px;"/>
+      <input id="aPass" type="password" placeholder="Contraseña" onkeydown="if(event.key==='Enter')doLogin()" oninput="document.getElementById('aErr').style.display='none'" style="width:100%;background:var(--negro-medio);border:1px solid var(--gris);color:var(--blanco);padding:14px 16px;font-family:'Barlow',sans-serif;font-size:15px;outline:none;margin-bottom:12px;"/>
       <div id="aErr" style="color:#ff6666;font-size:13px;margin-bottom:12px;display:none;">Usuario o contraseña incorrectos</div>
       <button onclick="doLogin()" style="width:100%;background:var(--rojo);color:#fff;border:none;padding:16px;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;">Ingresar</button>
       <button onclick="cerrarAdmin()" style="width:100%;background:transparent;color:var(--gris-claro);border:1px solid var(--gris);padding:12px;font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;margin-top:10px;">Cancelar</button>
@@ -805,7 +815,10 @@ function abrirModal(id) {
 
   document.getElementById('modalDetalle').classList.add('open');
   document.body.style.overflow = 'hidden';
-}
+
+  // Botón WhatsApp con mensaje del auto
+  const waMsg = encodeURIComponent(`Hola, me interesa saber más sobre el ${a.marca} ${a.modelo}${a.anio?' ('+a.anio+')':''}.`);
+  document.getElementById('modalWaBtn').href = `https://wa.me/543471596248?text=${waMsg}`;
 
 function modalNav(dir) {
   modalFotoActual = (modalFotoActual + dir + modalFotos.length) % modalFotos.length;
@@ -837,13 +850,15 @@ function consultarDesdeModal() {
   document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
 }
 document.addEventListener('keydown', e => {
-  if (e.key==='Escape') {
+  // Escape cierra modal o admin
+  if (e.key === 'Escape') {
     if (document.getElementById('modalDetalle').classList.contains('open')) cerrarModalDirecto();
-    else cerrarAdmin();
+    else if (document.getElementById('adminOverlay').style.display === 'block') cerrarAdmin();
   }
+  // Flechas navegan fotos del modal
   if (document.getElementById('modalDetalle').classList.contains('open')) {
-    if (e.key==='ArrowLeft') modalNav(-1);
-    if (e.key==='ArrowRight') modalNav(1);
+    if (e.key === 'ArrowLeft')  modalNav(-1);
+    if (e.key === 'ArrowRight') modalNav(1);
   }
 });
 
@@ -890,7 +905,7 @@ if (vid) {
 }
 
 /* ============================================================
-   JS — CONTADORES HERO
+   JS — CONTADORES HERO (arrancan al cargar, no con observer)
 ============================================================ */
 function animCounter(el) {
   const target = parseInt(el.dataset.target), suffix = el.dataset.suffix||'', start = performance.now();
@@ -902,13 +917,14 @@ function animCounter(el) {
     else { el.textContent=target+suffix; el.classList.add('done'); }
   })(start);
 }
-let counted = false;
-const statsEl = document.querySelector('.hero-stats');
-if (statsEl) {
-  new IntersectionObserver(e => {
-    if(e[0].isIntersecting && !counted) { counted=true; document.querySelectorAll('.stat-num[data-target]').forEach((el,i)=>setTimeout(()=>animCounter(el),i*200)); }
-  },{threshold:0.5}).observe(statsEl);
-}
+// Arrancar contadores 1 segundo después de cargar la página
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.querySelectorAll('.stat-num[data-target]').forEach((el,i) => {
+      setTimeout(() => animCounter(el), i * 300);
+    });
+  }, 800);
+});
 
 /* ============================================================
    JS — NAV ACTIVO AL SCROLL
@@ -923,6 +939,13 @@ window.addEventListener('scroll', () => {
    JS — ADMIN
 ============================================================ */
 const A_USER = 'jbadmin', A_PASS = 'jb2024';
+
+// Hover del botón admin
+const btnAdmin = document.getElementById('btnAdmin');
+if (btnAdmin) {
+  btnAdmin.addEventListener('mouseenter', () => { btnAdmin.style.color='var(--rojo)'; btnAdmin.style.borderColor='var(--rojo)'; });
+  btnAdmin.addEventListener('mouseleave', () => { btnAdmin.style.color='#444'; btnAdmin.style.borderColor='#333'; });
+}
 
 function abrirAdmin() {
   document.getElementById('adminOverlay').style.display = 'block';
