@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>JB Automotores | Venta de Autos Usados y 0km — Cañada de Gómez</title>
+<meta name="description" content="JB Automotores, tu concesionaria en Cañada de Gómez. Autos usados y 0km, financiación y permuta. Av. Sta. Fe 885."/>
+<meta property="og:title" content="JB Automotores | Autos Usados y 0km"/>
+<meta property="og:description" content="Encontrá tu próximo auto en JB Automotores. Usados y 0km en Cañada de Gómez."/>
+<meta property="og:image" content="https://res.cloudinary.com/di4mn6qkt/video/upload/so_0/VIDEO_HERO_ykmmj9.jpg"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--r:#CC0000;--rv:#FF1A1A;--n:#0A0A0A;--nm:#141414;--ns:#1E1E1E;--g:#2A2A2A;--gc:#888;--b:#F5F5F5;--verde:#22c55e;--amarillo:#f59e0b}
+html{scroll-behavior:smooth}
+body{background:var(--n);color:var(--b);font-family:'Barlow',sans-serif;overflow-x:hidden}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--n)}::-webkit-scrollbar-thumb{background:var(--r);border-radius:2px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:68px;background:rgba(10,10,10,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(204,0,0,0.25)}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:3px}.logo span{color:var(--r)}
+.nav-links{display:flex;gap:36px;list-style:none}
+.nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gc);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--rv)}
+.nav-cta{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;background:var(--r);color:#fff;border:none;padding:10px 24px;cursor:pointer;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);transition:background .2s;text-decoration:none}
+.nav-cta:hover{background:var(--rv)}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding-top:68px}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0;transition:opacity 1.4s ease}
+.hero-video.loaded{opacity:1}
+.hero-bg{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 60% 50% at 70% 50%,rgba(180,0,0,0.18) 0%,transparent 70%),var(--n)}
+.hero-ov{position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(5,5,5,0.93) 0%,rgba(5,5,5,0.6) 55%,rgba(5,5,5,0.25) 100%),linear-gradient(to top,rgba(5,5,5,0.85) 0%,transparent 40%)}
+.hero-sc{position:absolute;inset:0;z-index:1;background-image:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.03) 2px,rgba(0,0,0,0.03) 4px);pointer-events:none}
+.hero-content{position:relative;z-index:2;padding:0 48px;max-width:680px}
+.hero-tag{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--r);margin-bottom:20px;display:flex;align-items:center;gap:12px;animation:fadeUp .6s ease both}
+.hero-tag::before{content:'';display:block;width:32px;height:2px;background:var(--r)}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(64px,9vw,120px);line-height:.92;letter-spacing:2px;margin-bottom:28px;animation:fadeUp .6s .1s ease both}
+.hero h1 em{font-style:normal;color:var(--r);display:block}
+.hero p{font-size:16px;font-weight:300;line-height:1.7;color:var(--gc);max-width:420px;margin-bottom:44px;animation:fadeUp .6s .2s ease both}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap;animation:fadeUp .6s .3s ease both}
+.btn-p{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;background:var(--r);color:#fff;border:none;padding:16px 36px;cursor:pointer;clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%);transition:background .2s,transform .15s;text-decoration:none;display:inline-block}
+.btn-p:hover{background:var(--rv);transform:translateY(-1px)}
+.btn-s{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase;background:transparent;color:var(--b);border:1px solid rgba(255,255,255,0.2);padding:16px 36px;cursor:pointer;transition:border-color .2s,color .2s;text-decoration:none;display:inline-block}
+.btn-s:hover{border-color:var(--r);color:var(--r)}
+
+/* SECCIONES */
+section{padding:100px 48px}
+.sec-tag{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--r);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.sec-tag::before{content:'';display:block;width:24px;height:2px;background:var(--r)}
+.sec-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,5vw,58px);letter-spacing:2px;line-height:1;margin-bottom:48px}
+
+/* CATÁLOGO */
+#catalogo{background:var(--nm)}
+.cat-ctrl{display:flex;gap:12px;margin-bottom:32px;flex-wrap:wrap;align-items:center}
+.busq-wrap{position:relative;flex:1;min-width:200px}
+.busq-wrap input{width:100%;background:var(--ns);border:1px solid var(--g);color:var(--b);padding:10px 16px 10px 38px;font-family:'Barlow',sans-serif;font-size:14px;outline:none;transition:border-color .2s}
+.busq-wrap input:focus{border-color:var(--r)}
+.busq-wrap input::placeholder{color:var(--gc)}
+.busq-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--gc);font-size:14px;pointer-events:none}
+.filters{display:flex;gap:12px;flex-wrap:wrap}
+.fb{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;letter-spacing:2px;text-transform:uppercase;background:transparent;color:var(--gc);border:1px solid var(--g);padding:8px 20px;cursor:pointer;transition:all .2s}
+.fb:hover,.fb.active{background:var(--r);border-color:var(--r);color:#fff}
+.cars-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+.skel{background:var(--ns);border:1px solid var(--g);height:340px;position:relative;overflow:hidden}
+.skel::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.04),transparent);animation:shim 1.4s infinite}
+@keyframes shim{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.car-card{background:var(--ns);border:1px solid var(--g);overflow:hidden;transition:border-color .3s,transform .3s;cursor:pointer}
+.car-card:hover{border-color:var(--r);transform:translateY(-4px)}
+.car-gal{position:relative;height:210px;overflow:hidden}
+.car-gal-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .4s ease}
+.car-gal-img.active{opacity:1}
+.gal-prev,.gal-next{position:absolute;top:50%;transform:translateY(-50%);z-index:5;background:rgba(0,0,0,0.55);border:none;color:#fff;font-size:22px;width:32px;height:44px;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s}
+.gal-prev{left:0}.gal-next{right:0}
+.car-gal:hover .gal-prev,.car-gal:hover .gal-next{opacity:1}
+.gal-prev:hover,.gal-next:hover{background:rgba(204,0,0,0.75)}
+.gal-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:5}
+.gdot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.4);cursor:pointer;border:none;transition:background .2s,transform .2s}
+.gdot.active{background:var(--r);transform:scale(1.3)}
+.car-badge{position:absolute;top:14px;left:14px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 12px;clip-path:polygon(4px 0%,100% 0%,calc(100% - 4px) 100%,0% 100%);z-index:3}
+.b-usado{background:rgba(204,0,0,0.85);color:#fff}
+.b-nuevo{background:rgba(255,255,255,0.9);color:var(--n)}
+.car-info{padding:20px}
+.car-name{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;letter-spacing:1px;margin-bottom:4px}
+.car-ver{font-size:13px;color:var(--gc);margin-bottom:14px}
+.car-specs{display:flex;gap:16px;margin-bottom:16px;flex-wrap:wrap}
+.spec{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:1px;color:var(--gc);display:flex;align-items:center;gap:5px}
+.spec-dot{width:4px;height:4px;border-radius:50%;background:var(--r);flex-shrink:0}
+.car-bot{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid var(--g)}
+.car-price{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:1px}
+.car-price span{color:var(--r);font-size:18px}
+.btn-ver{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;background:transparent;color:var(--r);border:1px solid var(--r);padding:8px 16px;cursor:pointer;transition:all .2s}
+.btn-ver:hover{background:var(--r);color:#fff}
+.no-autos{text-align:center;padding:64px;color:var(--gc);grid-column:1/-1;font-family:'Barlow Condensed',sans-serif;font-size:16px;letter-spacing:2px;text-transform:uppercase}
+
+/* MODAL */
+.modal-ov{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,0.92);display:none;align-items:center;justify-content:center;padding:20px}
+.modal-ov.open{display:flex}
+.modal-box{background:var(--nm);border:1px solid var(--g);width:100%;max-width:900px;max-height:90vh;overflow-y:auto;animation:fadeUp .3s ease}
+.modal-close{position:sticky;top:0;float:right;background:rgba(10,10,10,0.9);border:none;color:var(--gc);font-size:24px;width:44px;height:44px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;margin-left:auto}
+.modal-close:hover{color:var(--rv)}
+.modal-gal{position:relative;height:380px;overflow:hidden;background:var(--ns)}
+.modal-gal-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .4s ease}
+.modal-gal-img.active{opacity:1}
+.modal-prev,.modal-next{position:absolute;top:50%;transform:translateY(-50%);z-index:5;background:rgba(0,0,0,0.6);border:none;color:#fff;font-size:28px;width:44px;height:60px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.modal-prev{left:0}.modal-next{right:0}
+.modal-prev:hover,.modal-next:hover{background:rgba(204,0,0,0.75)}
+.modal-mdots{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:5}
+.mdot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.35);cursor:pointer;border:none;transition:background .2s}
+.mdot.active{background:var(--r)}
+.modal-cnt{position:absolute;top:14px;right:14px;background:rgba(0,0,0,0.65);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:13px;padding:4px 10px;z-index:5}
+.modal-body{padding:32px}
+.modal-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:12px}
+.modal-titulo{font-family:'Bebas Neue',sans-serif;font-size:38px;letter-spacing:2px;line-height:1}
+.modal-version{font-size:14px;color:var(--gc);margin-top:4px}
+.modal-precio{font-family:'Bebas Neue',sans-serif;font-size:42px;letter-spacing:1px;text-align:right}
+.modal-precio span{color:var(--r);font-size:28px}
+.modal-specs{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-bottom:24px}
+.mspec{background:var(--ns);border:1px solid var(--g);padding:14px 16px}
+.mspec-l{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gc);margin-bottom:4px}
+.mspec-v{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700}
+.modal-desc{font-size:14px;color:var(--gc);line-height:1.7;padding:16px;background:var(--ns);border-left:2px solid var(--r);margin-bottom:24px}
+.modal-btns{display:flex;gap:12px;flex-wrap:wrap}
+
+/* SERVICIOS */
+#servicios{padding:0;background:var(--n)}
+.serv-head{padding:80px 48px 40px}
+.serv-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.serv-card{position:relative;height:520px;overflow:hidden}
+.serv-card::before{content:'';position:absolute;inset:0;background-image:var(--bg);background-size:cover;background-position:center;transition:transform .7s ease;z-index:0}
+.serv-card:hover::before{transform:scale(1.07)}
+.serv-ov{position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(5,5,5,0.97) 0%,rgba(5,5,5,0.6) 50%,rgba(5,5,5,0.2) 100%);transition:background .4s}
+.serv-card:hover .serv-ov{background:linear-gradient(to top,rgba(5,5,5,0.98) 0%,rgba(5,5,5,0.75) 55%,rgba(140,0,0,0.18) 100%)}
+.serv-content{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:36px 32px}
+.serv-num{font-family:'Bebas Neue',sans-serif;font-size:56px;color:rgba(204,0,0,0.18);line-height:1;margin-bottom:4px;transition:color .3s}
+.serv-card:hover .serv-num{color:rgba(204,0,0,0.35)}
+.serv-titulo{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
+.serv-linea{width:32px;height:2px;background:var(--r);margin-bottom:14px;transition:width .4s ease}
+.serv-card:hover .serv-linea{width:60px}
+.serv-desc{font-size:14px;font-weight:300;color:var(--gc);line-height:1.65;max-height:0;overflow:hidden;opacity:0;transition:max-height .5s ease,opacity .4s ease}
+.serv-card:hover .serv-desc{max-height:100px;opacity:1}
+
+/* CONTACTO */
+#contacto{background:var(--nm);position:relative;overflow:hidden}
+#contacto::before{content:'JB';position:absolute;right:-40px;top:-40px;font-family:'Bebas Neue',sans-serif;font-size:300px;color:rgba(204,0,0,0.04);line-height:1;pointer-events:none}
+.cont-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;position:relative}
+.cont-info h3{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gc);margin-bottom:28px}
+.cont-dato{display:flex;gap:16px;margin-bottom:24px;align-items:flex-start}
+.dato-icon{width:40px;height:40px;background:rgba(204,0,0,0.15);border:1px solid rgba(204,0,0,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px}
+.dato-text{font-size:15px;color:var(--gc);line-height:1.5}
+.dato-text strong{color:var(--b);display:block;font-weight:500}
+.mapa-wrap{margin-top:28px;border:1px solid var(--g);overflow:hidden}
+.mapa-wrap iframe{width:100%;height:220px;border:none;display:block;filter:grayscale(80%) invert(90%) contrast(85%)}
+.fg{margin-bottom:20px}
+.fg label{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gc);display:block;margin-bottom:8px}
+.fg input,.fg textarea,.fg select{width:100%;background:var(--ns);border:1px solid var(--g);color:var(--b);padding:14px 16px;font-family:'Barlow',sans-serif;font-size:15px;outline:none;transition:border-color .2s;appearance:none}
+.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--r)}
+.fg textarea{resize:vertical;min-height:110px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-ok{display:none;text-align:center;padding:40px;background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.3)}
+.form-ok p{font-family:'Barlow Condensed',sans-serif;font-size:18px;letter-spacing:2px;text-transform:uppercase;color:#22c55e}
+
+/* WA FLOAT */
+.wa-float{position:fixed;bottom:28px;right:28px;z-index:200;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:transform .2s}
+.wa-float:hover{transform:scale(1.1)}
+.wa-float svg{width:28px;height:28px;fill:white}
+
+/* FOOTER */
+footer{background:var(--n);border-top:1px solid var(--g);padding:32px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer-logo{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:3px;cursor:pointer;user-select:none}
+.footer-logo span{color:var(--r)}
+.footer-copy{font-size:13px;color:var(--gc)}
+
+/* ADMIN OVERLAY */
+.adm-ov{display:none;position:fixed;inset:0;z-index:9999;background:var(--n);overflow-y:auto}
+.adm-login{display:flex;align-items:center;justify-content:center;min-height:100vh;background:radial-gradient(ellipse 60% 60% at 50% 40%,rgba(180,0,0,0.1) 0%,transparent 70%),var(--n)}
+.adm-login-box{background:var(--ns);border:1px solid var(--g);padding:48px 40px;width:340px;text-align:center}
+.adm-logo{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:3px;margin-bottom:4px}
+.adm-logo span{color:var(--r)}
+.adm-sub{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gc);margin-bottom:32px}
+.adm-input{width:100%;background:var(--nm);border:1px solid var(--g);color:var(--b);padding:14px 16px;font-family:'Barlow',sans-serif;font-size:15px;outline:none;margin-bottom:12px;display:block;transition:border-color .2s}
+.adm-input:focus{border-color:var(--r)}
+.adm-err{color:#ff6666;font-size:13px;margin-bottom:12px;display:none}
+.adm-btn-in{width:100%;background:var(--r);color:#fff;border:none;padding:16px;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;margin-bottom:10px}
+.adm-btn-in:hover{background:var(--rv)}
+.adm-btn-out{width:100%;background:transparent;color:var(--gc);border:1px solid var(--g);padding:12px;font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;cursor:pointer}
+.adm-panel{display:none}
+.adm-header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(204,0,0,0.2);padding:0 28px;height:60px;display:flex;align-items:center;justify-content:space-between}
+.adm-header-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:3px}
+.adm-header-logo span{color:var(--r)}
+.adm-salir{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;background:transparent;color:#ff6666;border:1px solid #ff6666;padding:7px 16px;cursor:pointer}
+.adm-tabs{display:flex;border-bottom:1px solid var(--g);background:var(--nm);overflow-x:auto}
+.adm-tab{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:16px 28px;background:transparent;border:none;border-bottom:2px solid transparent;color:var(--gc);cursor:pointer;white-space:nowrap;transition:all .2s}
+.adm-tab.on{color:var(--b);border-bottom-color:var(--r)}
+.adm-pane{display:none}
+.adm-pane.on{display:block}
+.adm-form{max-width:660px;margin:0 auto;padding:36px 28px}
+.adm-form h2{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:2px;margin-bottom:28px}
+.adm-form h2 span{color:var(--r)}
+.af{margin-bottom:20px}
+.af label{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gc);display:block;margin-bottom:8px}
+.af input,.af select,.af textarea{width:100%;background:var(--ns);border:1px solid var(--g);color:var(--b);padding:13px 15px;font-family:'Barlow',sans-serif;font-size:15px;outline:none;transition:border-color .2s;appearance:none;border-radius:0}
+.af input:focus,.af select:focus,.af textarea:focus{border-color:var(--r)}
+.af textarea{resize:vertical;min-height:80px}
+.af-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fotos-zona{border:2px dashed var(--g);padding:32px 20px;text-align:center;cursor:pointer;position:relative;background:var(--ns);transition:all .2s}
+.fotos-zona:hover{border-color:var(--r);background:rgba(204,0,0,0.04)}
+.fotos-zona input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.fotos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px;margin-top:14px}
+.ft-wrap{position:relative}
+.ft-img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--g);display:block}
+.ft-principal{position:absolute;top:4px;left:4px;background:var(--r);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:2px 6px}
+.ft-rm{position:absolute;top:4px;right:4px;background:rgba(0,0,0,0.8);color:#fff;border:none;width:22px;height:22px;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center}
+.ft-rm:hover{background:var(--r)}
+.adm-btns{display:flex;gap:12px;margin-top:8px}
+.adm-save{flex:1;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;letter-spacing:2px;text-transform:uppercase;background:var(--r);color:#fff;border:none;padding:16px;cursor:pointer}
+.adm-save:hover{background:var(--rv)}
+.adm-save:disabled{background:var(--g);cursor:not-allowed}
+.adm-cancel{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;letter-spacing:2px;text-transform:uppercase;background:transparent;color:var(--gc);border:1px solid var(--g);padding:16px 24px;cursor:pointer;display:none}
+.adm-lista{padding:28px}
+.adm-lista-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:12px}
+.adm-lista-top h2{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:2px}
+.alf-btns{display:flex;gap:8px;flex-wrap:wrap}
+.alf{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;background:transparent;color:var(--gc);border:1px solid var(--g);padding:7px 16px;cursor:pointer;transition:all .2s}
+.alf.on,.alf:hover{background:var(--r);border-color:var(--r);color:#fff}
+.auto-row{display:grid;grid-template-columns:96px 1fr auto;background:var(--ns);border:1px solid var(--g);margin-bottom:10px;overflow:hidden;transition:border-color .2s}
+.auto-row:hover{border-color:rgba(204,0,0,0.4)}
+.auto-thumb{width:96px;height:76px;object-fit:cover;background:var(--g);display:block}
+.auto-info{padding:12px 16px;display:flex;flex-direction:column;justify-content:center;gap:3px}
+.auto-nombre{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700}
+.auto-meta{font-size:12px;color:var(--gc)}
+.auto-precio-t{font-family:'Bebas Neue',sans-serif;font-size:17px}
+.auto-precio-t span{color:var(--r)}
+.abadge{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:2px 8px;clip-path:polygon(3px 0%,100% 0%,calc(100% - 3px) 100%,0% 100%)}
+.abadge-u{background:rgba(204,0,0,0.8);color:#fff}
+.abadge-n{background:rgba(245,245,245,0.9);color:#111}
+.auto-acc{display:flex;flex-direction:column;border-left:1px solid var(--g)}
+.btn-edit{flex:1;border:none;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:0 18px;background:rgba(245,158,11,0.1);color:var(--amarillo);transition:background .15s}
+.btn-edit:hover{background:rgba(245,158,11,0.22)}
+.btn-del{flex:1;border:none;border-top:1px solid var(--g);cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:0 18px;background:rgba(204,0,0,0.08);color:#ff6666;transition:background .15s}
+.btn-del:hover{background:rgba(204,0,0,0.22)}
+.cons-card{background:var(--ns);border:1px solid var(--g);margin-bottom:12px;padding:20px 24px;transition:border-color .2s}
+.cons-card.nueva{border-color:rgba(34,197,94,0.4);background:rgba(34,197,94,0.03)}
+.cons-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.cons-nombre{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700}
+.cons-tel{font-size:13px;color:var(--gc);margin-top:2px}
+.cons-tel strong{color:var(--b)}
+.cons-sobre{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gc);margin-top:4px}
+.cons-msg{font-size:14px;color:var(--gc);line-height:1.6;padding:14px;background:var(--nm);border-left:2px solid var(--r);margin-top:12px}
+.cons-foot{display:flex;align-items:center;justify-content:space-between;margin-top:14px;flex-wrap:wrap;gap:8px}
+.cons-fecha{font-size:12px;color:var(--gc)}
+.cons-acc{display:flex;gap:8px;flex-wrap:wrap}
+.badge-nueva{background:rgba(34,197,94,0.15);color:var(--verde);border:1px solid rgba(34,197,94,0.3);font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:3px 10px}
+.badge-leida{background:transparent;color:var(--gc);border:1px solid var(--g);font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:3px 10px}
+.btn-wa-cons{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;background:rgba(37,211,102,0.12);color:#25D366;border:1px solid rgba(37,211,102,0.3);padding:6px 14px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn-marcar{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;background:transparent;color:var(--gc);border:1px solid var(--g);padding:6px 14px;cursor:pointer}
+.btn-marcar:hover{border-color:var(--verde);color:var(--verde)}
+.vacio{text-align:center;padding:64px;color:var(--gc);font-family:'Barlow Condensed',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase}
+.cnt-badge{background:var(--r);color:#fff;font-size:10px;border-radius:10px;padding:1px 7px;margin-left:6px}
+.cnt-badge.v{background:var(--verde)}
+
+/* TOAST */
+.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ns);border:1px solid var(--g);padding:13px 28px;font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;z-index:99999;transition:transform .3s,opacity .3s;opacity:0;white-space:nowrap}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.toast.v{border-color:var(--verde);color:var(--verde)}
+.toast.r{border-color:var(--rv);color:var(--rv)}
+
+/* ANIMACIONES */
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .serv-grid{grid-template-columns:repeat(2,1fr)}
+  .serv-card{height:380px}
+  .serv-desc{max-height:80px;opacity:1}
+  .cont-grid{grid-template-columns:1fr;gap:40px}
+}
+@media(max-width:768px){
+  nav{padding:0 16px;height:60px}
+  .nav-links{display:none}
+  .logo{font-size:22px}
+  .nav-cta{padding:8px 16px;font-size:12px}
+  .hero{min-height:100svh}
+  .hero-content{padding:0 20px;padding-top:80px;max-width:100%}
+  .hero h1{font-size:clamp(52px,14vw,80px);margin-bottom:16px}
+  .hero p{font-size:14px;margin-bottom:28px}
+  .btn-p,.btn-s{padding:13px 24px;font-size:13px}
+  section{padding:56px 16px}
+  .sec-title{font-size:clamp(32px,8vw,48px);margin-bottom:28px}
+  .cat-ctrl{flex-direction:column;align-items:stretch}
+  .cars-grid{grid-template-columns:1fr;gap:16px}
+  .car-gal{height:200px}
+  .gal-prev,.gal-next{opacity:.7}
+  #servicios{padding:0}
+  .serv-head{padding:48px 16px 24px}
+  .serv-grid{grid-template-columns:1fr}
+  .serv-card{height:260px}
+  .serv-desc{max-height:80px;opacity:1}
+  .serv-content{padding:24px 20px}
+  #contacto{padding:56px 16px}
+  #contacto::before{display:none}
+  .cont-grid{grid-template-columns:1fr;gap:32px}
+  .form-row{grid-template-columns:1fr;gap:0}
+  footer{padding:20px 16px;flex-direction:column;text-align:center;gap:8px}
+  .wa-float{width:50px;height:50px;bottom:20px;right:16px}
+  .modal-ov{padding:0}
+  .modal-box{max-height:100vh}
+  .modal-gal{height:240px}
+  .modal-body{padding:20px}
+  .modal-titulo{font-size:28px}
+  .modal-precio{font-size:32px}
+  .modal-btns{flex-direction:column}
+  .adm-form{padding:20px 16px}
+  .af-row{grid-template-columns:1fr}
+  .adm-lista{padding:16px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">JB <span>Automotores</span></div>
+  <ul class="nav-links">
+    <li><a href="#catalogo">Catálogo</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a href="https://wa.me/543471596248?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20veh%C3%ADculos." target="_blank" class="nav-cta">Contactanos</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <video class="hero-video" id="heroVid" autoplay muted loop playsinline
+    poster="https://res.cloudinary.com/di4mn6qkt/video/upload/so_0/VIDEO_HERO_ykmmj9.jpg">
+    <source src="https://res.cloudinary.com/di4mn6qkt/video/upload/q_auto:low,w_1280/VIDEO_HERO_ykmmj9.mp4" type="video/mp4"/>
+    <source src="https://res.cloudinary.com/di4mn6qkt/video/upload/VIDEO_HERO_ykmmj9.mp4" type="video/mp4"/>
+  </video>
+  <div class="hero-ov"></div>
+  <div class="hero-sc"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Tu próximo auto te espera</div>
+    <h1>MANEJÁ<br>LO QUE <em>QUERÉS</em></h1>
+    <p>Usados y 0km seleccionados. Financiación a tu medida, garantía real y atención personalizada.</p>
+    <div class="hero-btns">
+      <a href="#catalogo" class="btn-p">Ver catálogo</a>
+      <a href="https://wa.me/543471596248?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20veh%C3%ADculos." target="_blank" class="btn-s">Contactanos</a>
+    </div>
+  </div>
+</section>
+
+<!-- CATÁLOGO -->
+<section id="catalogo">
+  <div class="sec-tag">Vehículos</div>
+  <div class="sec-title">CATÁLOGO</div>
+  <div class="cat-ctrl">
+    <div class="busq-wrap">
+      <span class="busq-icon">🔍</span>
+      <input type="text" id="busq" placeholder="Buscar por marca o modelo…" oninput="buscar()"/>
+    </div>
+    <div class="filters">
+      <button class="fb active" onclick="filtrar(this,'todos')">Todos</button>
+      <button class="fb" onclick="filtrar(this,'usado')">Usados</button>
+      <button class="fb" onclick="filtrar(this,'nuevo')">0km</button>
+    </div>
+  </div>
+  <div class="cars-grid" id="carsGrid">
+    <div class="skel"></div><div class="skel"></div><div class="skel"></div>
+  </div>
+</section>
+
+<!-- MODAL DETALLE -->
+<div class="modal-ov" id="modalOv" onclick="if(event.target===this)cerrarModal()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="cerrarModal()">✕</button>
+    <div class="modal-gal" id="modalGal"></div>
+    <div class="modal-body">
+      <div class="modal-head">
+        <div>
+          <div class="modal-titulo" id="mTitulo"></div>
+          <div class="modal-version" id="mVersion"></div>
+          <span id="mBadge" style="display:inline-block;margin-top:8px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 12px;clip-path:polygon(4px 0%,100% 0%,calc(100% - 4px) 100%,0% 100%);"></span>
+        </div>
+        <div class="modal-precio"><span>$</span><span id="mPrecio"></span></div>
+      </div>
+      <div class="modal-specs" id="mSpecs"></div>
+      <div class="modal-desc" id="mDesc" style="display:none"></div>
+      <div class="modal-btns">
+        <a id="mWaBtn" href="#" target="_blank" class="btn-p" style="text-align:center;">Consultar por WhatsApp</a>
+        <button class="btn-s" onclick="cerrarModal()">Volver al catálogo</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICIOS -->
+<section id="servicios" style="padding:0">
+  <div class="serv-head">
+    <div class="sec-tag">Lo que ofrecemos</div>
+    <div class="sec-title">SERVICIOS</div>
+  </div>
+  <div class="serv-grid">
+    <div class="serv-card" style="--bg:url('https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+      <div class="serv-ov"></div>
+      <div class="serv-content"><div class="serv-num">01</div><div class="serv-titulo">Venta de Usados</div><div class="serv-linea"></div><div class="serv-desc">Vehículos inspeccionados, con historial verificado y garantía. Cada unidad pasa por un control técnico antes de salir a la venta.</div></div>
+    </div>
+    <div class="serv-card" style="--bg:url('https://images.pexels.com/photos/1638459/pexels-photo-1638459.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+      <div class="serv-ov"></div>
+      <div class="serv-content"><div class="serv-num">02</div><div class="serv-titulo">0km a Pedido</div><div class="serv-linea"></div><div class="serv-desc">Gestionamos tu 0km con todas las marcas del mercado. Entrega directa, sin intermediarios y con la mejor cotización disponible.</div></div>
+    </div>
+    <div class="serv-card" style="--bg:url('https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+      <div class="serv-ov"></div>
+      <div class="serv-content"><div class="serv-num">03</div><div class="serv-titulo">Financiación</div><div class="serv-linea"></div><div class="serv-desc">Planes propios y financiación bancaria con cuotas fijas en pesos. Calculamos la opción ideal para tu situación en el momento.</div></div>
+    </div>
+    <div class="serv-card" style="--bg:url('https://images.pexels.com/photos/1231643/pexels-photo-1231643.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+      <div class="serv-ov"></div>
+      <div class="serv-content"><div class="serv-num">04</div><div class="serv-titulo">Recibimos tu Auto</div><div class="serv-linea"></div><div class="serv-desc">Tomamos tu vehículo como parte de pago. Tasación inmediata y transparente, sin vueltas ni pérdidas de tiempo.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="sec-tag">Hablemos</div>
+  <div class="sec-title">CONTACTO</div>
+  <div class="cont-grid">
+    <div class="cont-info">
+      <h3>Encontranos</h3>
+      <div class="cont-dato"><div class="dato-icon">📍</div><div class="dato-text"><strong>Dirección</strong>Av. Sta. Fe 885, Cañada de Gómez</div></div>
+      <div class="cont-dato"><div class="dato-icon">📞</div><div class="dato-text"><strong>Teléfono</strong>03471 59-6248</div></div>
+      <div class="cont-dato"><div class="dato-icon">📱</div><div class="dato-text"><strong>WhatsApp</strong>03471 59-6248</div></div>
+      <div class="cont-dato"><div class="dato-icon">🕐</div><div class="dato-text"><strong>Horarios</strong>Lun a Vie &amp; Sáb — 8:30 a 19:30 hs<br/><span style="color:#555;font-size:13px;">Domingo cerrado</span></div></div>
+      <div class="mapa-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.5!2d-61.397!3d-32.816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+Santa+Fe+885%2C+Ca%C3%B1ada+de+G%C3%B3mez!5e0!3m2!1ses!2sar!4v1700000000000" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div>
+      <div id="formContacto">
+        <div class="form-row">
+          <div class="fg"><label>Nombre</label><input id="cNombre" type="text" placeholder="Tu nombre"/></div>
+          <div class="fg"><label>Teléfono</label><input id="cTelefono" type="tel" placeholder="Tu número"/></div>
+        </div>
+        <div class="fg">
+          <label>Consulta sobre</label>
+          <select id="cSobre">
+            <option value="">Seleccioná una opción</option>
+            <option>Compra de vehículo</option>
+            <option>Venta / permuta</option>
+            <option>Financiación</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="fg"><label>Mensaje</label><textarea id="cMensaje" placeholder="Contanos en qué te podemos ayudar..."></textarea></div>
+        <button class="btn-p" style="width:100%;padding:18px;font-size:15px;" onclick="enviarConsulta()">Enviar consulta</button>
+      </div>
+      <div class="form-ok" id="formOk"><p>✓ Consulta enviada<br>Te contactamos a la brevedad</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo" id="footerLogo">JB <span>Automotores</span></div>
+  <div class="footer-copy">© 2025 JB Automotores. Todos los derechos reservados.</div>
+</footer>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/543471596248" target="_blank" class="wa-float">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ADMIN OVERLAY -->
+<div class="adm-ov" id="admOv">
+
+  <!-- LOGIN -->
+  <div class="adm-login" id="admLogin">
+    <div class="adm-login-box">
+      <div class="adm-logo">JB <span>Automotores</span></div>
+      <div class="adm-sub">Panel de administración</div>
+      <input class="adm-input" id="admUser" type="text" placeholder="Usuario" autocomplete="off"/>
+      <input class="adm-input" id="admPass" type="password" placeholder="Contraseña"/>
+      <div class="adm-err" id="admErr">Usuario o contraseña incorrectos</div>
+      <button class="adm-btn-in" id="admBtnIn">Ingresar</button>
+      <button class="adm-btn-out" id="admBtnOut">Cancelar</button>
+    </div>
+  </div>
+
+  <!-- PANEL -->
+  <div class="adm-panel" id="admPanel">
+    <div class="adm-header">
+      <div class="adm-header-logo">JB <span>Admin</span></div>
+      <button class="adm-salir" id="admSalir">Salir</button>
+    </div>
+    <div class="adm-tabs">
+      <button class="adm-tab on" data-tab="tForm">＋ Nuevo auto</button>
+      <button class="adm-tab" data-tab="tAutos">Autos <span class="cnt-badge" id="cntAutos">0</span></button>
+      <button class="adm-tab" data-tab="tConsultas">Consultas <span class="cnt-badge v" id="cntCons">0</span></button>
+    </div>
+
+    <!-- FORM -->
+    <div class="adm-pane on" id="tForm">
+      <div class="adm-form">
+        <h2 id="formTit">Nuevo auto <span>+</span></h2>
+        <div class="af">
+          <label>Fotos <span style="color:var(--r)">*</span></label>
+          <div class="fotos-zona" id="fotosZona">
+            <input type="file" id="fotosInput" accept="image/*" multiple/>
+            <div style="font-size:36px;margin-bottom:8px;">📷</div>
+            <div style="font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:700;margin-bottom:4px;">Tocá para elegir fotos</div>
+            <div style="font-size:13px;color:var(--gc);">Desde el celular o la computadora · Hasta 6 fotos · Se suben automáticamente</div>
+          </div>
+          <div class="fotos-grid" id="fotosGrid"></div>
+        </div>
+        <div class="af-row">
+          <div class="af"><label>Marca <span style="color:var(--r)">*</span></label><input id="fMarca" type="text" placeholder="Toyota, Ford…"/></div>
+          <div class="af"><label>Modelo <span style="color:var(--r)">*</span></label><input id="fModelo" type="text" placeholder="Corolla, Ranger…"/></div>
+        </div>
+        <div class="af-row">
+          <div class="af"><label>Versión</label><input id="fVersion" type="text" placeholder="2.0 XEI CVT"/></div>
+          <div class="af"><label>Año <span style="color:var(--r)">*</span></label><input id="fAnio" type="number" placeholder="2024" min="1990" max="2030"/></div>
+        </div>
+        <div class="af-row">
+          <div class="af"><label>Tipo</label><select id="fTipo"><option value="usado">Usado</option><option value="nuevo">0km</option></select></div>
+          <div class="af"><label>Combustible</label><select id="fCombustible"><option>Nafta</option><option>Diesel</option><option>GNC</option><option>Híbrido</option><option>Eléctrico</option></select></div>
+        </div>
+        <div class="af-row">
+          <div class="af"><label>Kilómetros</label><input id="fKm" type="text" placeholder="45.000 km"/></div>
+          <div class="af"><label>Transmisión</label><select id="fTransmision"><option>Automático</option><option>Manual</option><option>CVT</option><option>DSG</option></select></div>
+        </div>
+        <div class="af"><label>Precio <span style="color:var(--r)">*</span></label><input id="fPrecio" type="text" placeholder="24.500.000"/></div>
+        <div class="af"><label>Descripción / extras</label><textarea id="fDesc" placeholder="Cuero, techo solar, airbags…"></textarea></div>
+        <input type="hidden" id="fEditId"/>
+        <div class="adm-btns">
+          <button class="adm-save" id="btnGuardar">Guardar auto</button>
+          <button class="adm-cancel" id="btnCancelar">Cancelar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- LISTA AUTOS -->
+    <div class="adm-pane" id="tAutos">
+      <div class="adm-lista">
+        <div class="adm-lista-top">
+          <h2>Autos publicados</h2>
+          <div class="alf-btns">
+            <button class="alf on" data-filtro="todos">Todos</button>
+            <button class="alf" data-filtro="usado">Usados</button>
+            <button class="alf" data-filtro="nuevo">0km</button>
+          </div>
+        </div>
+        <div id="listaAutos"></div>
+      </div>
+    </div>
+
+    <!-- CONSULTAS -->
+    <div class="adm-pane" id="tConsultas">
+      <div class="adm-lista">
+        <div class="adm-lista-top">
+          <h2>Consultas recibidas</h2>
+          <div class="alf-btns">
+            <button class="alf on" data-filtro2="todas">Todas</button>
+            <button class="alf" data-filtro2="nuevas">Sin leer</button>
+            <button class="alf" data-filtro2="leidas">Leídas</button>
+          </div>
+        </div>
+        <div id="listaConsultas"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ── SUPABASE ──
+const SB_URL = 'https://qapbuwauobxfqhgoecpi.supabase.co';
+const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFhcGJ1d2F1b2J4ZnFoZ29lY3BpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUyMzI4MDksImV4cCI6MjA5MDgwODgwOX0.xaMD3W6rENtqAhC9zzQKJDUvvXz0PCcmZ-iniZ2_1Us';
+const SBH = {'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json'};
+
+async function sbGet(t,f=''){
+  const r=await fetch(SB_URL+'/rest/v1/'+t+'?'+f+'&order=created_at.desc',{headers:SBH});
+  return r.ok?r.json():[];
+}
+async function sbPost(t,d){
+  const r=await fetch(SB_URL+'/rest/v1/'+t,{method:'POST',headers:{...SBH,'Prefer':'return=minimal'},body:JSON.stringify(d)});
+  return r.ok;
+}
+async function sbPatch(t,id,d){
+  const r=await fetch(SB_URL+'/rest/v1/'+t+'?id=eq.'+id,{method:'PATCH',headers:{...SBH,'Prefer':'return=minimal'},body:JSON.stringify(d)});
+  return r.ok;
+}
+async function sbDelete(t,id){
+  const r=await fetch(SB_URL+'/rest/v1/'+t+'?id=eq.'+id,{method:'DELETE',headers:{...SBH,'Prefer':'return=minimal'}});
+  return r.ok;
+}
+
+// ── VIDEO ──
+const vid=document.getElementById('heroVid');
+if(vid){
+  const tryPlay=()=>vid.play().then(()=>vid.classList.add('loaded')).catch(()=>{
+    vid.style.display='none';
+    const fb=document.querySelector('.hero-bg');
+    if(fb){fb.style.backgroundImage="url('https://res.cloudinary.com/di4mn6qkt/video/upload/so_0/VIDEO_HERO_ykmmj9.jpg')";fb.style.backgroundSize='cover';fb.style.backgroundPosition='center';}
+  });
+  vid.addEventListener('canplay',()=>vid.classList.add('loaded'));
+  vid.addEventListener('loadedmetadata',tryPlay);
+  if(vid.readyState>=2)tryPlay();
+  document.addEventListener('touchstart',()=>{if(vid.paused)vid.play().catch(()=>{});},{once:true});
+}
+
+// ── CATÁLOGO ──
+let todosAutos=[],filtroActivo='todos',busqActiva='';
+
+async function cargarAutos(){
+  try{todosAutos=await sbGet('autos');}catch{todosAutos=[];}
+  renderCatalogo();
+}
+
+function renderCatalogo(){
+  const g=document.getElementById('carsGrid');
+  let lista=filtroActivo==='todos'?todosAutos:todosAutos.filter(a=>a.tipo===filtroActivo);
+  if(busqActiva){const q=busqActiva.toLowerCase();lista=lista.filter(a=>(a.marca+' '+a.modelo).toLowerCase().includes(q));}
+  if(!lista.length){g.innerHTML='<div class="no-autos">No se encontraron vehículos</div>';return;}
+  g.innerHTML=lista.map(a=>{
+    const fotos=a.fotos||[];
+    const imgs=fotos.map((f,i)=>`<img class="car-gal-img${i===0?' active':''}" src="${f}" alt="${a.marca} ${a.modelo}"/>`).join('')||'<div style="width:100%;height:100%;background:var(--g);display:flex;align-items:center;justify-content:center;color:var(--gc);font-size:12px;">Sin foto</div>';
+    const dots=fotos.length>1?fotos.map((_,i)=>`<button class="gdot${i===0?' active':''}" onclick="event.stopPropagation();galIdx(this,${i})"></button>`).join(''):'';
+    const navs=fotos.length>1?`<button class="gal-prev" onclick="event.stopPropagation();galNav(this,-1)">&#8249;</button><button class="gal-next" onclick="event.stopPropagation();galNav(this,1)">&#8250;</button>`:'';
+    return`<div class="car-card" onclick="abrirModal('${a.id}')">
+      <div class="car-gal">${imgs}<span class="car-badge ${a.tipo==='nuevo'?'b-nuevo':'b-usado'}">${a.tipo==='nuevo'?'0km':'Usado'}</span>${navs}${fotos.length>1?`<div class="gal-dots">${dots}</div>`:''}</div>
+      <div class="car-info">
+        <div class="car-name">${a.marca} ${a.modelo}</div>
+        <div class="car-ver">${[a.version,a.anio].filter(Boolean).join(' • ')}</div>
+        <div class="car-specs">${[a.km,a.combustible,a.transmision].filter(Boolean).map(s=>`<span class="spec"><span class="spec-dot"></span>${s}</span>`).join('')}</div>
+        <div class="car-bot"><div class="car-price"><span>$</span>${a.precio}</div><button class="btn-ver" onclick="event.stopPropagation();abrirModal('${a.id}')">Ver detalle</button></div>
+      </div></div>`;
+  }).join('');
+}
+
+function filtrar(btn,tipo){filtroActivo=tipo;document.querySelectorAll('.fb').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderCatalogo();}
+function buscar(){busqActiva=document.getElementById('busq').value.trim();renderCatalogo();}
+
+function galIdx(dot,idx){const g=dot.closest('.car-gal');g.querySelectorAll('.car-gal-img').forEach((img,i)=>img.classList.toggle('active',i===idx));g.querySelectorAll('.gdot').forEach((d,i)=>d.classList.toggle('active',i===idx));}
+function galNav(btn,dir){const g=btn.closest('.car-gal');const imgs=g.querySelectorAll('.car-gal-img');let cur=0;imgs.forEach((img,i)=>{if(img.classList.contains('active'))cur=i;});const next=(cur+dir+imgs.length)%imgs.length;imgs.forEach((img,i)=>img.classList.toggle('active',i===next));g.querySelectorAll('.gdot').forEach((d,i)=>d.classList.toggle('active',i===next));}
+
+// ── MODAL ──
+let mFotos=[],mFotoCur=0,mAutoSel=null;
+
+function abrirModal(id){
+  const a=todosAutos.find(x=>x.id===id);if(!a)return;
+  mAutoSel=a;mFotos=a.fotos||[];mFotoCur=0;
+  const gal=document.getElementById('modalGal');
+  gal.innerHTML='';
+  if(mFotos.length){
+    mFotos.forEach((f,i)=>{const img=document.createElement('img');img.src=f;img.className='modal-gal-img'+(i===0?' active':'');gal.appendChild(img);});
+    if(mFotos.length>1){
+      gal.innerHTML+=`<button class="modal-prev" onclick="mNav(-1)">&#8249;</button><button class="modal-next" onclick="mNav(1)">&#8250;</button><div class="modal-mdots">${mFotos.map((_,i)=>`<button class="mdot${i===0?' active':''}" onclick="mIr(${i})"></button>`).join('')}</div><div class="modal-cnt" id="mCnt">1 / ${mFotos.length}</div>`;
+    }
+  }else{gal.innerHTML='<div style="width:100%;height:100%;background:var(--g);display:flex;align-items:center;justify-content:center;color:var(--gc);">Sin fotos</div>';}
+  document.getElementById('mTitulo').textContent=`${a.marca} ${a.modelo}`;
+  document.getElementById('mVersion').textContent=[a.version,a.anio].filter(Boolean).join(' • ');
+  document.getElementById('mPrecio').textContent=a.precio;
+  const badge=document.getElementById('mBadge');
+  badge.textContent=a.tipo==='nuevo'?'0km':'Usado';
+  badge.style.background=a.tipo==='nuevo'?'rgba(245,245,245,0.9)':'rgba(204,0,0,0.85)';
+  badge.style.color=a.tipo==='nuevo'?'#111':'#fff';
+  document.getElementById('mSpecs').innerHTML=[{l:'Año',v:a.anio},{l:'Kilómetros',v:a.km},{l:'Combustible',v:a.combustible},{l:'Transmisión',v:a.transmision}].filter(s=>s.v).map(s=>`<div class="mspec"><div class="mspec-l">${s.l}</div><div class="mspec-v">${s.v}</div></div>`).join('');
+  const descEl=document.getElementById('mDesc');if(a.descripcion){descEl.textContent=a.descripcion;descEl.style.display='block';}else{descEl.style.display='none';}
+  document.getElementById('mWaBtn').href=`https://wa.me/543471596248?text=${encodeURIComponent('Hola, me interesa saber más sobre el '+a.marca+' '+a.modelo+(a.anio?' ('+a.anio+')':'')+'. ¿Podría darme más información?')}`;
+  document.getElementById('modalOv').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function mNav(dir){mFotoCur=(mFotoCur+dir+mFotos.length)%mFotos.length;mActGal();}
+function mIr(idx){mFotoCur=idx;mActGal();}
+function mActGal(){
+  document.querySelectorAll('.modal-gal-img').forEach((img,i)=>img.classList.toggle('active',i===mFotoCur));
+  document.querySelectorAll('.mdot').forEach((d,i)=>d.classList.toggle('active',i===mFotoCur));
+  const cnt=document.getElementById('mCnt');if(cnt)cnt.textContent=(mFotoCur+1)+' / '+mFotos.length;
+}
+function cerrarModal(){document.getElementById('modalOv').classList.remove('open');document.body.style.overflow='';}
+
+// ── CONTACTO ──
+async function enviarConsulta(){
+  const nombre=document.getElementById('cNombre').value.trim();
+  const telefono=document.getElementById('cTelefono').value.trim();
+  if(!nombre||!telefono){alert('Completá nombre y teléfono');return;}
+  const ok=await sbPost('consultas',{nombre,telefono,consulta_sobre:document.getElementById('cSobre').value,mensaje:document.getElementById('cMensaje').value.trim(),leida:false});
+  if(ok){document.getElementById('formContacto').style.display='none';document.getElementById('formOk').style.display='block';}
+  else{alert('Error al enviar. Intentá por WhatsApp.');}
+}
+
+// ── NAV SCROLL ──
+window.addEventListener('scroll',()=>{
+  let cur='';
+  document.querySelectorAll('section[id]').forEach(s=>{if(window.scrollY>=s.offsetTop-100)cur=s.id;});
+  document.querySelectorAll('.nav-links a').forEach(a=>{a.style.color=a.getAttribute('href')==='#'+cur?'var(--rv)':'';});
+});
+
+// ── TECLADO ──
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){
+    if(document.getElementById('modalOv').classList.contains('open'))cerrarModal();
+    else if(document.getElementById('admOv').style.display==='block')cerrarAdm();
+  }
+  if(document.getElementById('modalOv').classList.contains('open')){
+    if(e.key==='ArrowLeft')mNav(-1);
+    if(e.key==='ArrowRight')mNav(1);
+  }
+});
+
+// ══════════════════════════════════════════
+// ADMIN
+// ══════════════════════════════════════════
+const ADM_USER='jbadmin', ADM_PASS='jb2026';
+
+// Abrir admin desde footer logo
+document.getElementById('footerLogo').addEventListener('click',()=>{
+  document.getElementById('admOv').style.display='block';
+  document.body.style.overflow='hidden';
+});
+
+// Login
+document.getElementById('admBtnIn').addEventListener('click',hacerLogin);
+document.getElementById('admBtnOut').addEventListener('click',cerrarAdm);
+document.getElementById('admSalir').addEventListener('click',cerrarAdm);
+document.getElementById('admUser').addEventListener('keydown',e=>{if(e.key==='Enter')hacerLogin();});
+document.getElementById('admPass').addEventListener('keydown',e=>{if(e.key==='Enter')hacerLogin();});
+document.getElementById('admUser').addEventListener('input',()=>document.getElementById('admErr').style.display='none');
+document.getElementById('admPass').addEventListener('input',()=>document.getElementById('admErr').style.display='none');
+
+function hacerLogin(){
+  const u=document.getElementById('admUser').value.trim();
+  const p=document.getElementById('admPass').value.trim();
+  if(u===ADM_USER && p===ADM_PASS){
+    document.getElementById('admLogin').style.display='none';
+    document.getElementById('admPanel').style.display='block';
+    document.getElementById('admOv').scrollTop=0;
+    admCargarAutos();
+    admContadorConsultas();
+  }else{
+    document.getElementById('admErr').style.display='block';
+  }
+}
+
+function cerrarAdm(){
+  document.getElementById('admOv').style.display='none';
+  document.getElementById('admLogin').style.display='flex';
+  document.getElementById('admPanel').style.display='none';
+  document.getElementById('admUser').value='';
+  document.getElementById('admPass').value='';
+  document.body.style.overflow='';
+}
+
+// Tabs
+document.querySelectorAll('.adm-tab').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.adm-tab').forEach(b=>b.classList.remove('on'));
+    document.querySelectorAll('.adm-pane').forEach(p=>p.classList.remove('on'));
+    btn.classList.add('on');
+    document.getElementById(btn.dataset.tab).classList.add('on');
+    if(btn.dataset.tab==='tConsultas')admCargarConsultas();
+    if(btn.dataset.tab==='tAutos')admCargarAutos();
+  });
+});
+
+// Filtros autos
+let admFiltroAutos='todos';
+document.querySelectorAll('[data-filtro]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    admFiltroAutos=btn.dataset.filtro;
+    document.querySelectorAll('[data-filtro]').forEach(b=>b.classList.remove('on'));
+    btn.classList.add('on');
+    admRenderAutos();
+  });
+});
+
+// Filtros consultas
+let admFiltroConsultas='todas';
+document.querySelectorAll('[data-filtro2]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    admFiltroConsultas=btn.dataset.filtro2;
+    document.querySelectorAll('[data-filtro2]').forEach(b=>b.classList.remove('on'));
+    btn.classList.add('on');
+    admRenderConsultas();
+  });
+});
+
+// Fotos
+let admFotos=[]; // array de URLs de Cloudinary
+
+document.getElementById('fotosInput').addEventListener('change',function(){admAgregarFotos(this.files);this.value='';});
+const fz=document.getElementById('fotosZona');
+fz.addEventListener('dragover',e=>{e.preventDefault();fz.style.borderColor='var(--r)';});
+fz.addEventListener('dragleave',()=>fz.style.borderColor='');
+fz.addEventListener('drop',e=>{e.preventDefault();fz.style.borderColor='';admAgregarFotos(e.dataTransfer.files);});
+
+async function admAgregarFotos(files){
+  const arr=[...files].slice(0, 6 - admFotos.length);
+  if(!arr.length){toast('Máximo 6 fotos','r');return;}
+  const btnG=document.getElementById('btnGuardar');
+  btnG.disabled=true;btnG.textContent='Subiendo fotos…';
+  try{
+    // Subir todas en paralelo
+    const resultados = await Promise.all(arr.map(file=>{
+      const fd=new FormData();
+      fd.append('file',file);
+      fd.append('upload_preset','jb_autos');
+      // Comprimir antes de subir
+      return new Promise((resolve)=>{
+        const img=new Image();
+        const reader=new FileReader();
+        reader.onload=e=>{
+          img.onload=()=>{
+            const canvas=document.createElement('canvas');
+            const MAX=1200;
+            let w=img.width,h=img.height;
+            if(w>MAX){h=Math.round(h*MAX/w);w=MAX;}
+            canvas.width=w;canvas.height=h;
+            canvas.getContext('2d').drawImage(img,0,0,w,h);
+            canvas.toBlob(blob=>{
+              const fd2=new FormData();
+              fd2.append('file',blob,'foto.jpg');
+              fd2.append('upload_preset','jb_autos');
+              fetch('https://api.cloudinary.com/v1_1/di4mn6qkt/image/upload',{method:'POST',body:fd2})
+                .then(r=>r.json())
+                .then(data=>resolve(data.secure_url||null))
+                .catch(()=>resolve(null));
+            },'image/jpeg',0.75);
+          };
+          img.src=e.target.result;
+        };
+        reader.readAsDataURL(file);
+      });
+    }));
+    const urls=resultados.filter(Boolean);
+    admFotos=[...admFotos,...urls];
+    admRenderFotos();
+    if(urls.length<arr.length)toast('Alguna foto no se pudo subir','r');
+  }catch(e){
+    toast('Error al subir fotos','r');
+  }
+  btnG.disabled=false;btnG.textContent=document.getElementById('fEditId').value?'Actualizar auto':'Guardar auto';
+}
+function admQuitarFoto(i){admFotos.splice(i,1);admRenderFotos();}
+function admRenderFotos(){
+  document.getElementById('fotosGrid').innerHTML=admFotos.map((f,i)=>`
+    <div class="ft-wrap">
+      <img class="ft-img" src="${f}"/>
+      ${i===0?'<div class="ft-principal">Principal</div>':''}
+      <button class="ft-rm" onclick="admQuitarFoto(${i})">✕</button>
+    </div>`).join('');
+  fz.style.opacity=admFotos.length>=6?'0.5':'1';
+}
+
+// Guardar auto
+document.getElementById('btnGuardar').addEventListener('click',admGuardar);
+document.getElementById('btnCancelar').addEventListener('click',admLimpiar);
+
+async function admGuardar(){
+  const marca=document.getElementById('fMarca').value.trim();
+  const modelo=document.getElementById('fModelo').value.trim();
+  const anio=document.getElementById('fAnio').value.trim();
+  const precio=document.getElementById('fPrecio').value.trim();
+  if(!marca||!modelo||!anio||!precio){toast('Completá marca, modelo, año y precio','r');return;}
+  if(!admFotos.length){toast('Agregá al menos una foto','r');return;}
+  const btn=document.getElementById('btnGuardar');
+  btn.disabled=true;btn.textContent='Guardando…';
+  const payload={marca,modelo,version:document.getElementById('fVersion').value.trim(),anio,tipo:document.getElementById('fTipo').value,combustible:document.getElementById('fCombustible').value,km:document.getElementById('fKm').value.trim(),transmision:document.getElementById('fTransmision').value,precio,descripcion:document.getElementById('fDesc').value.trim(),fotos:admFotos};
+  try{
+    const editId=document.getElementById('fEditId').value;
+    if(editId){await sbPatch('autos',editId,payload);toast('Auto actualizado','v');}
+    else{await sbPost('autos',payload);toast('Auto publicado','v');}
+    admLimpiar();admCargarAutos();cargarAutos();
+    setTimeout(()=>{document.querySelectorAll('.adm-tab')[1].click();},600);
+  }catch(e){toast('Error al guardar','r');}
+  btn.disabled=false;btn.textContent=document.getElementById('fEditId').value?'Actualizar auto':'Guardar auto';
+}
+
+function admLimpiar(){
+  ['fMarca','fModelo','fVersion','fAnio','fKm','fPrecio','fDesc','fEditId'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('fTipo').value='usado';
+  document.getElementById('fCombustible').value='Nafta';
+  document.getElementById('fTransmision').value='Automático';
+  admFotos=[];admRenderFotos();
+  document.getElementById('formTit').innerHTML='Nuevo auto <span>+</span>';
+  document.getElementById('btnGuardar').textContent='Guardar auto';
+  document.getElementById('btnCancelar').style.display='none';
+}
+
+// Cargar y mostrar autos
+let admAutosData=[];
+async function admCargarAutos(){
+  try{admAutosData=await sbGet('autos');}catch{admAutosData=[];}
+  document.getElementById('cntAutos').textContent=admAutosData.length;
+  admRenderAutos();
+}
+function admRenderAutos(){
+  const lista=admFiltroAutos==='todos'?admAutosData:admAutosData.filter(a=>a.tipo===admFiltroAutos);
+  const el=document.getElementById('listaAutos');
+  if(!lista.length){el.innerHTML='<div class="vacio">No hay autos cargados</div>';return;}
+  el.innerHTML=lista.map(a=>`
+    <div class="auto-row">
+      <img class="auto-thumb" src="${a.fotos?.[0]||''}" onerror="this.style.background='#222'"/>
+      <div class="auto-info">
+        <div class="auto-nombre">${a.marca} ${a.modelo}</div>
+        <div class="auto-meta">${[a.version,a.anio,a.km,a.combustible].filter(Boolean).join(' · ')}</div>
+        <div class="auto-precio-t"><span>$</span>${a.precio}</div>
+        <span class="abadge ${a.tipo==='nuevo'?'abadge-n':'abadge-u'}">${a.tipo==='nuevo'?'0km':'Usado'}</span>
+      </div>
+      <div class="auto-acc">
+        <button class="btn-edit" onclick="admEditar('${a.id}')">✎ Editar</button>
+        <button class="btn-del" onclick="admEliminar('${a.id}')">✕ Quitar</button>
+      </div>
+    </div>`).join('');
+}
+
+function admEditar(id){
+  const a=admAutosData.find(x=>x.id===id);if(!a)return;
+  document.getElementById('fMarca').value=a.marca;
+  document.getElementById('fModelo').value=a.modelo;
+  document.getElementById('fVersion').value=a.version||'';
+  document.getElementById('fAnio').value=a.anio;
+  document.getElementById('fTipo').value=a.tipo;
+  document.getElementById('fCombustible').value=a.combustible;
+  document.getElementById('fKm').value=a.km||'';
+  document.getElementById('fTransmision').value=a.transmision;
+  document.getElementById('fPrecio').value=a.precio;
+  document.getElementById('fDesc').value=a.descripcion||'';
+  document.getElementById('fEditId').value=a.id;
+  admFotos=(a.fotos||[]);admRenderFotos();
+  document.getElementById('formTit').innerHTML='Editar auto <span>✎</span>';
+  document.getElementById('btnGuardar').textContent='Actualizar auto';
+  document.getElementById('btnCancelar').style.display='block';
+  document.querySelectorAll('.adm-tab')[0].click();
+  document.getElementById('admOv').scrollTop=0;
+}
+
+async function admEliminar(id){
+  if(!confirm('¿Eliminar este auto? No se puede deshacer.'))return;
+  const ok=await sbDelete('autos',id);
+  if(ok){toast('Auto eliminado','r');admCargarAutos();cargarAutos();}
+  else toast('Error al eliminar','r');
+}
+
+// Consultas
+let admConsultasData=[];
+async function admContadorConsultas(){
+  try{const d=await sbGet('consultas','select=id,leida');document.getElementById('cntCons').textContent=d.filter(c=>!c.leida).length||d.length;}catch{}
+}
+async function admCargarConsultas(){
+  try{admConsultasData=await sbGet('consultas');}catch{admConsultasData=[];}
+  const sinLeer=admConsultasData.filter(c=>!c.leida).length;
+  document.getElementById('cntCons').textContent=sinLeer||admConsultasData.length;
+  admRenderConsultas();
+}
+function admRenderConsultas(){
+  let lista=admConsultasData;
+  if(admFiltroConsultas==='nuevas')lista=lista.filter(c=>!c.leida);
+  if(admFiltroConsultas==='leidas')lista=lista.filter(c=>c.leida);
+  const el=document.getElementById('listaConsultas');
+  if(!lista.length){el.innerHTML='<div class="vacio">No hay consultas aquí</div>';return;}
+  el.innerHTML=lista.map(c=>{
+    const fecha=new Date(c.created_at).toLocaleDateString('es-AR',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'});
+    const tel=(c.telefono||'').replace(/\D/g,'');
+    const wa=`https://wa.me/54${tel}?text=${encodeURIComponent('Hola '+c.nombre+', te contactamos desde JB Automotores en respuesta a tu consulta.')}`;
+    return`<div class="cons-card ${c.leida?'':'nueva'}">
+      <div class="cons-top">
+        <div>
+          <div class="cons-nombre">${c.nombre}</div>
+          <div class="cons-tel">Tel: <strong>${c.telefono||'—'}</strong></div>
+          ${c.consulta_sobre?`<div class="cons-sobre">${c.consulta_sobre}</div>`:''}
+        </div>
+        <span class="${c.leida?'badge-leida':'badge-nueva'}">${c.leida?'Leída':'Nueva'}</span>
+      </div>
+      ${c.mensaje?`<div class="cons-msg">${c.mensaje}</div>`:''}
+      <div class="cons-foot">
+        <div class="cons-fecha">${fecha}</div>
+        <div class="cons-acc">
+          <a class="btn-wa-cons" href="${wa}" target="_blank">WhatsApp →</a>
+          ${!c.leida?`<button class="btn-marcar" onclick="admMarcarLeida('${c.id}')">Marcar leída</button>`:''}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+async function admMarcarLeida(id){
+  const ok=await sbPatch('consultas',id,{leida:true});
+  if(ok){const c=admConsultasData.find(x=>x.id===id);if(c)c.leida=true;admRenderConsultas();admContadorConsultas();}
+}
+
+// Toast
+function toast(msg,tipo){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.className='toast '+(tipo||'')+' show';
+  setTimeout(()=>t.classList.remove('show'),3000);
+}
+
+// Init
+cargarAutos();
+</script>
+</body>
+</html>
