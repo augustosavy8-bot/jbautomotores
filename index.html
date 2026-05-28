@@ -255,6 +255,8 @@ footer{background:var(--n);border-top:1px solid var(--g);padding:32px 48px;displ
 .btn-wa-cons{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;background:rgba(37,211,102,0.12);color:#25D366;border:1px solid rgba(37,211,102,0.3);padding:6px 14px;cursor:pointer;text-decoration:none;display:inline-block}
 .btn-marcar{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;background:transparent;color:var(--gc);border:1px solid var(--g);padding:6px 14px;cursor:pointer}
 .btn-marcar:hover{border-color:var(--verde);color:var(--verde)}
+.btn-eliminar{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;background:rgba(220,38,38,0.10);color:#ef4444;border:1px solid rgba(220,38,38,0.35);padding:6px 14px;cursor:pointer}
+.btn-eliminar:hover{background:rgba(220,38,38,0.22);border-color:#ef4444}
 .vacio{text-align:center;padding:64px;color:var(--gc);font-family:'Barlow Condensed',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase}
 .cnt-badge{background:var(--r);color:#fff;font-size:10px;border-radius:10px;padding:1px 7px;margin-left:6px}
 .cnt-badge.v{background:var(--verde)}
@@ -979,6 +981,7 @@ function admRenderConsultas(){
         <div class="cons-acc">
           <a class="btn-wa-cons" href="${wa}" target="_blank">WhatsApp →</a>
           ${!c.leida?`<button class="btn-marcar" onclick="admMarcarLeida('${c.id}')">Marcar leída</button>`:''}
+          <button class="btn-eliminar" onclick="admEliminarConsulta('${c.id}')">Eliminar</button>
         </div>
       </div>
     </div>`;
@@ -988,6 +991,13 @@ function admRenderConsultas(){
 async function admMarcarLeida(id){
   const ok=await sbPatch('consultas',id,{leida:true});
   if(ok){const c=admConsultasData.find(x=>x.id===id);if(c)c.leida=true;admRenderConsultas();admContadorConsultas();}
+}
+
+async function admEliminarConsulta(id){
+  if(!confirm('¿Eliminar esta consulta? Esta acción no se puede deshacer.'))return;
+  const ok=await sbDelete('consultas',id);
+  if(ok){admConsultasData=admConsultasData.filter(x=>x.id!==id);admRenderConsultas();admContadorConsultas();toast('Consulta eliminada','ok');}
+  else toast('Error al eliminar','error');
 }
 
 // Toast
