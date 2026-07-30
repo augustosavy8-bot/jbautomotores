@@ -8,6 +8,10 @@
 <meta property="og:title" content="JB Automotores | Autos Usados y 0km"/>
 <meta property="og:description" content="Encontrá tu próximo auto en JB Automotores. Usados y 0km en Cañada de Gómez."/>
 <meta property="og:image" content="https://res.cloudinary.com/di4mn6qkt/video/upload/so_0/VIDEO_HERO_ykmmj9.jpg"/>
+<link rel="preconnect" href="https://res.cloudinary.com"/>
+<link rel="preconnect" href="https://images.pexels.com"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -403,19 +407,19 @@ footer{background:var(--n);border-top:1px solid var(--g);padding:32px 48px;displ
     <div class="sec-title">SERVICIOS</div>
   </div>
   <div class="serv-grid">
-    <div class="serv-card" style="--bg:url('https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+    <div class="serv-card" style="--bg:url('https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=800')">
       <div class="serv-ov"></div>
       <div class="serv-content"><div class="serv-num">01</div><div class="serv-titulo">Venta de Usados</div><div class="serv-linea"></div><div class="serv-desc">Vehículos inspeccionados, con historial verificado y garantía. Cada unidad pasa por un control técnico antes de salir a la venta.</div></div>
     </div>
-    <div class="serv-card" style="--bg:url('https://images.pexels.com/photos/1638459/pexels-photo-1638459.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+    <div class="serv-card" style="--bg:url('https://images.pexels.com/photos/1638459/pexels-photo-1638459.jpeg?auto=compress&cs=tinysrgb&w=800')">
       <div class="serv-ov"></div>
       <div class="serv-content"><div class="serv-num">02</div><div class="serv-titulo">0km a Pedido</div><div class="serv-linea"></div><div class="serv-desc">Gestionamos tu 0km con todas las marcas del mercado. Entrega directa, sin intermediarios y con la mejor cotización disponible.</div></div>
     </div>
-    <div class="serv-card" style="--bg:url('https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+    <div class="serv-card" style="--bg:url('https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=800')">
       <div class="serv-ov"></div>
       <div class="serv-content"><div class="serv-num">03</div><div class="serv-titulo">Financiación</div><div class="serv-linea"></div><div class="serv-desc">Planes propios y financiación bancaria con cuotas fijas en pesos. Calculamos la opción ideal para tu situación en el momento.</div></div>
     </div>
-    <div class="serv-card" style="--bg:url('https://images.pexels.com/photos/1231643/pexels-photo-1231643.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+    <div class="serv-card" style="--bg:url('https://images.pexels.com/photos/1231643/pexels-photo-1231643.jpeg?auto=compress&cs=tinysrgb&w=800')">
       <div class="serv-ov"></div>
       <div class="serv-content"><div class="serv-num">04</div><div class="serv-titulo">Recibimos tu Auto</div><div class="serv-linea"></div><div class="serv-desc">Tomamos tu vehículo como parte de pago. Tasación inmediata y transparente, sin vueltas ni pérdidas de tiempo.</div></div>
     </div>
@@ -614,6 +618,13 @@ if(vid){
 // ── CATÁLOGO ──
 let todosAutos=[],filtroActivo='todos',busqActiva='';
 
+// Optimiza URLs de Cloudinary: formato auto (WebP/AVIF), calidad auto y ancho máx
+function cldOpt(url,w){
+  return (typeof url==='string' && url.includes('/image/upload/') && !url.includes('/f_auto'))
+    ? url.replace('/image/upload/','/image/upload/f_auto,q_auto,c_limit,w_'+w+'/')
+    : url;
+}
+
 async function cargarAutos(){
   try{todosAutos=await sbGet('autos');}catch{todosAutos=[];}
   renderCatalogo();
@@ -626,7 +637,7 @@ function renderCatalogo(){
   if(!lista.length){g.innerHTML='<div class="no-autos">No se encontraron vehículos</div>';return;}
   g.innerHTML=lista.map(a=>{
     const fotos=a.fotos||[];
-    const imgs=fotos.map((f,i)=>`<img class="car-gal-img${i===0?' active':''}" src="${f}" alt="${a.marca} ${a.modelo}"/>`).join('')||'<div style="width:100%;height:100%;background:var(--g);display:flex;align-items:center;justify-content:center;color:var(--gc);font-size:12px;">Sin foto</div>';
+    const imgs=fotos.map((f,i)=>`<img class="car-gal-img${i===0?' active':''}" src="${cldOpt(f,600)}" alt="${a.marca} ${a.modelo}" loading="lazy" decoding="async"/>`).join('')||'<div style="width:100%;height:100%;background:var(--g);display:flex;align-items:center;justify-content:center;color:var(--gc);font-size:12px;">Sin foto</div>';
     const dots=fotos.length>1?fotos.map((_,i)=>`<button class="gdot${i===0?' active':''}" onclick="event.stopPropagation();galIdx(this,${i})"></button>`).join(''):'';
     const navs=fotos.length>1?`<button class="gal-prev" onclick="event.stopPropagation();galNav(this,-1)">&#8249;</button><button class="gal-next" onclick="event.stopPropagation();galNav(this,1)">&#8250;</button>`:'';
     return`<div class="car-card" onclick="abrirModal('${a.id}')">
@@ -655,7 +666,7 @@ function abrirModal(id){
   const gal=document.getElementById('modalGal');
   gal.innerHTML='';
   if(mFotos.length){
-    mFotos.forEach((f,i)=>{const img=document.createElement('img');img.src=f;img.className='modal-gal-img'+(i===0?' active':'');gal.appendChild(img);});
+    mFotos.forEach((f,i)=>{const img=document.createElement('img');img.src=cldOpt(f,1200);img.className='modal-gal-img'+(i===0?' active':'');img.decoding='async';if(i!==0)img.loading='lazy';gal.appendChild(img);});
     if(mFotos.length>1){
       gal.innerHTML+=`<button class="modal-prev" onclick="mNav(-1)">&#8249;</button><button class="modal-next" onclick="mNav(1)">&#8250;</button><div class="modal-mdots">${mFotos.map((_,i)=>`<button class="mdot${i===0?' active':''}" onclick="mIr(${i})"></button>`).join('')}</div><div class="modal-cnt" id="mCnt">1 / ${mFotos.length}</div>`;
     }
@@ -903,7 +914,7 @@ function admRenderAutos(){
   if(!lista.length){el.innerHTML='<div class="vacio">No hay autos cargados</div>';return;}
   el.innerHTML=lista.map(a=>`
     <div class="auto-row">
-      <img class="auto-thumb" src="${a.fotos?.[0]||''}" onerror="this.style.background='#222'"/>
+      <img class="auto-thumb" src="${a.fotos?.[0]?cldOpt(a.fotos[0],200):''}" loading="lazy" decoding="async" onerror="this.style.background='#222'"/>
       <div class="auto-info">
         <div class="auto-nombre">${a.marca} ${a.modelo}</div>
         <div class="auto-meta">${[a.version,a.anio,a.km,a.combustible].filter(Boolean).join(' · ')}</div>
